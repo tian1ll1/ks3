@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - KafkaStreamTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>KafkaStreamTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.ks3.html">com.example.ks3</a> &gt; KafkaStreamTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.596s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testStreamProcessing()"></a>
+<h3 class="failures">testStreamProcessing()</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: not &lt;null&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at app//org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at app//org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:30)
+	at app//org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:304)
+	at app//com.example.ks3.KafkaStreamTest.testStreamProcessing(KafkaStreamTest.java:53)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testStreamProcessing()</td>
+<td class="failures">0.596s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:09:15.729 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ks3.KafkaStreamTest]: KafkaStreamTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:09:15.811 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ks3.Ks3Application for test class com.example.ks3.KafkaStreamTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2025-03-31T22:09:16.273+08:00  INFO 24336 --- [    Test worker] k.utils.Log4jControllerRegistration$     : Registered kafka:type=kafka.Log4jController MBean
+2025-03-31T22:09:16.304+08:00  INFO 24336 --- [    Test worker] org.apache.zookeeper.common.X509Util     : Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2025-03-31T22:09:16.403+08:00  INFO 24336 --- [-kit-executor-1] kafka.server.ControllerServer            : Formatting C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\controller_0 with metadata.version 3.3-IV0.
+2025-03-31T22:09:16.403+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Transition from SHUTDOWN to STARTING
+2025-03-31T22:09:16.403+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Starting controller
+2025-03-31T22:09:16.403+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.SharedServer                : [SharedServer id=0] Starting SharedServer
+2025-03-31T22:09:16.426+08:00  INFO 24336 --- [-kit-executor-2] o.a.k.s.network.EndpointReadyFutures     : authorizerStart completed for endpoint CONTROLLER. Endpoint is now READY.
+2025-03-31T22:09:16.509+08:00  INFO 24336 --- [-kit-executor-3] kafka.log.UnifiedLog$                    : [LogLoader partition=__cluster_metadata-0, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\controller_0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:16.509+08:00  INFO 24336 --- [-kit-executor-3] kafka.log.UnifiedLog$                    : [LogLoader partition=__cluster_metadata-0, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\controller_0] Reloading from producer snapshot and rebuilding producer state from offset 0
+2025-03-31T22:09:16.509+08:00  INFO 24336 --- [-kit-executor-3] kafka.log.UnifiedLog$                    : [LogLoader partition=__cluster_metadata-0, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\controller_0] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 0
+2025-03-31T22:09:16.547+08:00  INFO 24336 --- [-kit-executor-3] kafka.raft.KafkaMetadataLog$             : Initialized snapshots with IDs SortedSet() from C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\controller_0\__cluster_metadata-0
+2025-03-31T22:09:16.570+08:00  INFO 24336 --- [piration-reaper] ExpirationService$ExpiredOperationReaper : [raft-expiration-reaper]: Starting
+2025-03-31T22:09:16.729+08:00  INFO 24336 --- [-kit-executor-3] org.apache.kafka.raft.QuorumState        : [RaftManager id=0] Completed transition to Unattached(epoch=0, voters=[0], electionTimeoutMs=1558) from null
+2025-03-31T22:09:16.729+08:00  INFO 24336 --- [-kit-executor-2] kafka.network.ConnectionQuotas           : Updated connection-accept-rate max connection creation rate to 2147483647
+2025-03-31T22:09:16.736+08:00  INFO 24336 --- [-kit-executor-3] org.apache.kafka.raft.QuorumState        : [RaftManager id=0] Completed transition to CandidateState(localId=0, epoch=1, retries=1, voteStates={0=GRANTED}, highWatermark=Optional.empty, electionTimeoutMs=1835) from Unattached(epoch=0, voters=[0], electionTimeoutMs=1558)
+2025-03-31T22:09:16.736+08:00  INFO 24336 --- [-kit-executor-2] kafka.network.DataPlaneAcceptor          : Awaiting socket connections on localhost:62552.
+2025-03-31T22:09:16.736+08:00  INFO 24336 --- [-kit-executor-2] kafka.network.DataPlaneAcceptor          : Opened wildcard endpoint localhost:62552
+2025-03-31T22:09:16.748+08:00  INFO 24336 --- [-kit-executor-3] org.apache.kafka.raft.QuorumState        : [RaftManager id=0] Completed transition to Leader(localId=0, epoch=1, epochStartOffset=0, highWatermark=Optional.empty, voterStates={0=ReplicaState(nodeId=0, endOffset=Optional.empty, lastFetchTimestamp=-1, lastCaughtUpTimestamp=-1, hasAcknowledgedLeader=true)}) from CandidateState(localId=0, epoch=1, retries=1, voteStates={0=GRANTED}, highWatermark=Optional.empty, electionTimeoutMs=1835)
+2025-03-31T22:09:16.752+08:00  INFO 24336 --- [-kit-executor-2] kafka.network.SocketServer               : [SocketServer listenerType=CONTROLLER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(CONTROLLER)
+2025-03-31T22:09:16.766+08:00  INFO 24336 --- [-request-thread] kafka.raft.RaftSendThread                : [kafka-0-raft-outbound-request-thread]: Starting
+2025-03-31T22:09:16.766+08:00  INFO 24336 --- [-raft-io-thread] k.raft.KafkaRaftManager$RaftIoThread     : [kafka-0-raft-io-thread]: Starting
+2025-03-31T22:09:16.780+08:00  INFO 24336 --- [-raft-io-thread] org.apache.kafka.raft.LeaderState        : [RaftManager id=0] High watermark set to LogOffsetMetadata(offset=1, metadata=Optional[(segmentBaseOffset=0,relativePositionInSegment=91)]) for the first time for epoch 1 based on indexOfHw 0 and voters [ReplicaState(nodeId=0, endOffset=Optional[LogOffsetMetadata(offset=1, metadata=Optional[(segmentBaseOffset=0,relativePositionInSegment=91)])], lastFetchTimestamp=-1, lastCaughtUpTimestamp=-1, hasAcknowledgedLeader=true)]
+2025-03-31T22:09:16.787+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] initializeNewPublishers: The loader is still catching up because we have loaded up to offset -1, but the high water mark is 1
+2025-03-31T22:09:16.788+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Starting broker
+2025-03-31T22:09:16.788+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Waiting for controller quorum voters future
+2025-03-31T22:09:16.788+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Finished waiting for controller quorum voters future
+2025-03-31T22:09:16.788+08:00  INFO 24336 --- [-raft-io-thread] org.apache.kafka.raft.KafkaRaftClient    : [RaftManager id=0] Registered the listener org.apache.kafka.image.loader.MetadataLoader@447740180
+2025-03-31T22:09:16.804+08:00  INFO 24336 --- [nelReaper-Fetch] lientQuotaManager$ThrottledChannelReaper : [broker-0-ThrottledChannelReaper-Fetch]: Starting
+2025-03-31T22:09:16.804+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] maybePublishMetadata(LOG_DELTA): The loader is still catching up because we have not loaded a controller record as of offset 0 and high water mark is 1
+2025-03-31T22:09:16.804+08:00  INFO 24336 --- [lReaper-Produce] lientQuotaManager$ThrottledChannelReaper : [broker-0-ThrottledChannelReaper-Produce]: Starting
+2025-03-31T22:09:16.804+08:00  INFO 24336 --- [lReaper-Request] lientQuotaManager$ThrottledChannelReaper : [broker-0-ThrottledChannelReaper-Request]: Starting
+2025-03-31T22:09:16.804+08:00  INFO 24336 --- [trollerMutation] lientQuotaManager$ThrottledChannelReaper : [broker-0-ThrottledChannelReaper-ControllerMutation]: Starting
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [-kit-executor-3] kafka.log.LogManager                     : Log directory C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0 not found, creating it.
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [-kit-executor-2] o.a.kafka.controller.QuorumController    : [QuorumController id=0] Creating new QuorumController with clusterId NlpReAFPTRS8tY5gdvctfA.
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [-raft-io-thread] org.apache.kafka.raft.KafkaRaftClient    : [RaftManager id=0] Registered the listener org.apache.kafka.controller.QuorumController$QuorumMetaLogListener@1530180155
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [nelReaper-Fetch] lientQuotaManager$ThrottledChannelReaper : [controller-0-ThrottledChannelReaper-Fetch]: Starting
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [lReaper-Produce] lientQuotaManager$ThrottledChannelReaper : [controller-0-ThrottledChannelReaper-Produce]: Starting
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [lReaper-Request] lientQuotaManager$ThrottledChannelReaper : [controller-0-ThrottledChannelReaper-Request]: Starting
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [trollerMutation] lientQuotaManager$ThrottledChannelReaper : [controller-0-ThrottledChannelReaper-ControllerMutation]: Starting
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [0-event-handler] o.a.kafka.controller.QuorumController    : [QuorumController id=0] Becoming the active controller at epoch 1, next write offset 1.
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for controller quorum voters future
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for controller quorum voters future
+2025-03-31T22:09:16.816+08:00  WARN 24336 --- [0-event-handler] o.a.kafka.controller.QuorumController    : [QuorumController id=0] Performing controller activation. The metadata log appears to be empty. Appending 1 bootstrap record(s) in metadata transaction at metadata.version 3.6-IV2 from bootstrap source 'testkit'. Setting the ZK migration state to NONE since this is a de-novo KRaft cluster.
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [0-event-handler] o.a.k.controller.OffsetControlManager    : [QuorumController id=0] Replayed BeginTransactionRecord(name='Bootstrap records') at offset 1.
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [0-event-handler] o.a.k.controller.FeatureControlManager   : [QuorumController id=0] Replayed a FeatureLevelRecord setting metadata version to 3.6-IV2
+2025-03-31T22:09:16.816+08:00  INFO 24336 --- [0-event-handler] o.a.k.controller.OffsetControlManager    : [QuorumController id=0] Replayed EndTransactionRecord() at offset 4.
+2025-03-31T22:09:16.831+08:00  INFO 24336 --- [channel-manager] k.s.BrokerToControllerRequestThread      : [broker-0-to-controller-forwarding-channel-manager]: Starting
+2025-03-31T22:09:16.833+08:00  INFO 24336 --- [channel-manager] k.s.BrokerToControllerRequestThread      : [broker-0-to-controller-forwarding-channel-manager]: Recorded new controller, from now on will use node localhost:62552 (id: 0 rack: null)
+2025-03-31T22:09:16.834+08:00  INFO 24336 --- [per-0-AlterAcls] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-AlterAcls]: Starting
+2025-03-31T22:09:16.844+08:00  INFO 24336 --- [-kit-executor-3] kafka.network.ConnectionQuotas           : Updated connection-accept-rate max connection creation rate to 2147483647
+2025-03-31T22:09:16.844+08:00  INFO 24336 --- [-kit-executor-3] kafka.network.DataPlaneAcceptor          : Awaiting socket connections on localhost:62553.
+2025-03-31T22:09:16.844+08:00  INFO 24336 --- [-kit-executor-3] kafka.network.DataPlaneAcceptor          : Opened wildcard endpoint localhost:62553
+2025-03-31T22:09:16.859+08:00  INFO 24336 --- [-kit-executor-3] kafka.network.SocketServer               : [SocketServer listenerType=BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(EXTERNAL)
+2025-03-31T22:09:16.873+08:00  INFO 24336 --- [channel-manager] k.s.BrokerToControllerRequestThread      : [broker-0-to-controller-alter-partition-channel-manager]: Starting
+2025-03-31T22:09:16.873+08:00  INFO 24336 --- [channel-manager] k.s.BrokerToControllerRequestThread      : [broker-0-to-controller-alter-partition-channel-manager]: Recorded new controller, from now on will use node localhost:62552 (id: 0 rack: null)
+2025-03-31T22:09:16.883+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Waiting for the controller metadata publishers to be installed
+2025-03-31T22:09:16.886+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] maybePublishMetadata(LOG_DELTA): The loader finished catching up to the current high water mark of 5
+2025-03-31T22:09:16.886+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Finished waiting for the controller metadata publishers to be installed
+2025-03-31T22:09:16.887+08:00  INFO 24336 --- [-kit-executor-2] kafka.network.SocketServer               : [SocketServer listenerType=CONTROLLER, nodeId=0] Enabling request processing.
+2025-03-31T22:09:16.897+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing SnapshotGenerator with a snapshot at offset 4
+2025-03-31T22:09:16.897+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Waiting for all of the authorizer futures to be completed
+2025-03-31T22:09:16.897+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Finished waiting for all of the authorizer futures to be completed
+2025-03-31T22:09:16.897+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Waiting for all of the SocketServer Acceptors to be started
+2025-03-31T22:09:16.898+08:00  INFO 24336 --- [-kit-executor-2] kafka.server.ControllerServer            : [ControllerServer id=0] Finished waiting for all of the SocketServer Acceptors to be started
+2025-03-31T22:09:16.898+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing FeaturesPublisher with a snapshot at offset 4
+2025-03-31T22:09:16.898+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing DynamicConfigPublisher controller id=0 with a snapshot at offset 4
+2025-03-31T22:09:16.899+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing DynamicClientQuotaPublisher controller id=0 with a snapshot at offset 4
+2025-03-31T22:09:16.902+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing ScramPublisher controller id=0 with a snapshot at offset 4
+2025-03-31T22:09:16.902+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing DelegationTokenPublisher controller id=0 with a snapshot at offset 4
+2025-03-31T22:09:16.906+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing ControllerMetadataMetricsPublisher with a snapshot at offset 4
+2025-03-31T22:09:16.906+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing AclPublisher controller id=0 with a snapshot at offset 4
+2025-03-31T22:09:16.932+08:00  INFO 24336 --- [eaper-0-Produce] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Produce]: Starting
+2025-03-31T22:09:16.934+08:00  INFO 24336 --- [nReaper-0-Fetch] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Fetch]: Starting
+2025-03-31T22:09:16.934+08:00  INFO 24336 --- [0-DeleteRecords] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-DeleteRecords]: Starting
+2025-03-31T22:09:16.937+08:00  INFO 24336 --- [r-0-ElectLeader] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-ElectLeader]: Starting
+2025-03-31T22:09:16.938+08:00  INFO 24336 --- [r-0-RemoteFetch] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-RemoteFetch]: Starting
+2025-03-31T22:09:16.953+08:00  INFO 24336 --- [per-0-Heartbeat] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Heartbeat]: Starting
+2025-03-31T22:09:16.953+08:00  INFO 24336 --- [per-0-Rebalance] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Rebalance]: Starting
+2025-03-31T22:09:16.969+08:00  INFO 24336 --- [channel-manager] k.s.BrokerToControllerRequestThread      : [broker-0-to-controller-heartbeat-channel-manager]: Starting
+2025-03-31T22:09:16.969+08:00  INFO 24336 --- [channel-manager] k.s.BrokerToControllerRequestThread      : [broker-0-to-controller-heartbeat-channel-manager]: Recorded new controller, from now on will use node localhost:62552 (id: 0 rack: null)
+2025-03-31T22:09:16.969+08:00  INFO 24336 --- [r-event-handler] kafka.server.BrokerLifecycleManager      : [BrokerLifecycleManager id=0] Incarnation XfYYCU5xTXK5568Ldhx1mw of broker 0 in cluster NlpReAFPTRS8tY5gdvctfA is now STARTING.
+2025-03-31T22:09:16.994+08:00  INFO 24336 --- [per-0-AlterAcls] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-AlterAcls]: Starting
+2025-03-31T22:09:17.014+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for the broker metadata publishers to be installed
+2025-03-31T22:09:17.014+08:00  INFO 24336 --- [r-event-handler] o.a.kafka.image.loader.MetadataLoader    : [MetadataLoader id=0] InitializeNewPublishers: initializing BrokerMetadataPublisher with a snapshot at offset 4
+2025-03-31T22:09:17.014+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for the broker metadata publishers to be installed
+2025-03-31T22:09:17.014+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for the controller to acknowledge that we are caught up
+2025-03-31T22:09:17.014+08:00  INFO 24336 --- [r-event-handler] k.s.metadata.BrokerMetadataPublisher     : [BrokerMetadataPublisher id=0] Publishing initial metadata at offset OffsetAndEpoch(offset=4, epoch=1) with metadata.version 3.6-IV2.
+2025-03-31T22:09:17.014+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Loading logs from log dirs ArraySeq(C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0)
+2025-03-31T22:09:17.020+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : No logs found to be loaded in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0
+2025-03-31T22:09:17.032+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Loaded 0 logs in 15ms
+2025-03-31T22:09:17.034+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Starting log cleanup with a period of 300000 ms.
+2025-03-31T22:09:17.034+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Starting log flusher with a default period of 9223372036854775807 ms.
+2025-03-31T22:09:17.040+08:00  INFO 24336 --- [0-event-handler] o.a.k.controller.ClusterControlManager   : [QuorumController id=0] Replayed initial RegisterBrokerRecord for broker 0: RegisterBrokerRecord(brokerId=0, isMigratingZkBroker=false, incarnationId=XfYYCU5xTXK5568Ldhx1mw, brokerEpoch=5, endPoints=[BrokerEndpoint(name='EXTERNAL', host='localhost', port=62553, securityProtocol=0)], features=[BrokerFeature(name='metadata.version', minSupportedVersion=1, maxSupportedVersion=14)], rack=null, fenced=true, inControlledShutdown=false)
+2025-03-31T22:09:17.045+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogCleaner                     : Starting the log cleaner
+2025-03-31T22:09:17.045+08:00  INFO 24336 --- [leaner-thread-0] kafka.log.LogCleaner$CleanerThread       : [kafka-log-cleaner-thread-0]: Starting
+2025-03-31T22:09:17.045+08:00  INFO 24336 --- [rFailureHandler] k.s.ReplicaManager$LogDirFailureHandler  : [LogDirFailureHandler]: Starting
+2025-03-31T22:09:17.045+08:00  INFO 24336 --- [nSenderThread-0] kafka.server.AddPartitionsToTxnManager   : [AddPartitionsToTxnSenderThread-0]: Starting
+2025-03-31T22:09:17.045+08:00  INFO 24336 --- [r-event-handler] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Starting up.
+2025-03-31T22:09:17.061+08:00  INFO 24336 --- [r-event-handler] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Startup complete.
+2025-03-31T22:09:17.061+08:00  INFO 24336 --- [r-event-handler] k.c.transaction.TransactionCoordinator   : [TransactionCoordinator id=0] Starting up.
+2025-03-31T22:09:17.061+08:00  INFO 24336 --- [rSenderThread-0] k.c.t.TransactionMarkerChannelManager    : [TxnMarkerSenderThread-0]: Starting
+2025-03-31T22:09:17.061+08:00  INFO 24336 --- [r-event-handler] k.c.transaction.TransactionCoordinator   : [TransactionCoordinator id=0] Startup complete.
+2025-03-31T22:09:17.061+08:00  INFO 24336 --- [r-event-handler] k.s.metadata.BrokerMetadataPublisher     : [BrokerMetadataPublisher id=0] Updating metadata.version to 14 at offset OffsetAndEpoch(offset=4, epoch=1).
+2025-03-31T22:09:17.080+08:00  INFO 24336 --- [channel-manager] kafka.server.BrokerLifecycleManager      : [BrokerLifecycleManager id=0] Successfully registered broker 0 with broker epoch 5
+2025-03-31T22:09:17.080+08:00  INFO 24336 --- [channel-manager] kafka.server.BrokerLifecycleManager      : [BrokerLifecycleManager id=0] The broker has caught up. Transitioning from STARTING to RECOVERY.
+2025-03-31T22:09:17.080+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for the controller to acknowledge that we are caught up
+2025-03-31T22:09:17.080+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for the initial broker metadata update to be published
+2025-03-31T22:09:17.080+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for the initial broker metadata update to be published
+2025-03-31T22:09:17.080+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.KafkaConfig                 : KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.include.jmx.reporter = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = CONTROLLER
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = [0@0.0.0.0:0]
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.consumer.assignors = [org.apache.kafka.coordinator.group.assignor.RangeAssignor]
+	group.consumer.heartbeat.interval.ms = 5000
+	group.consumer.max.heartbeat.interval.ms = 15000
+	group.consumer.max.session.timeout.ms = 60000
+	group.consumer.max.size = 2147483647
+	group.consumer.min.heartbeat.interval.ms = 5000
+	group.consumer.min.session.timeout.ms = 45000
+	group.consumer.session.timeout.ms = 45000
+	group.coordinator.new.enable = false
+	group.coordinator.threads = 1
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = EXTERNAL
+	inter.broker.protocol.version = 3.6-IV2
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT
+	listeners = EXTERNAL://localhost:0,CONTROLLER://localhost:0
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 2097152
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.after.max.ms = 9223372036854775807
+	log.message.timestamp.before.max.ms = 9223372036854775807
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\controller_0
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.max.snapshot.interval.ms = 3600000
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = 104857600
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 2
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = [broker, controller]
+	producer.id.expiration.check.interval.ms = 600000
+	producer.id.expiration.ms = 86400000
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	server.max.startup.time.ms = 600000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.partition.verification.enable = true
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	unstable.api.versions.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = null
+	zookeeper.connection.timeout.ms = null
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.metadata.migration.enable = false
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+
+2025-03-31T22:09:17.092+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for the broker to be unfenced
+2025-03-31T22:09:17.092+08:00  INFO 24336 --- [channel-manager] kafka.server.BrokerLifecycleManager      : [BrokerLifecycleManager id=0] The broker is in RECOVERY.
+2025-03-31T22:09:17.092+08:00  INFO 24336 --- [0-event-handler] o.a.k.controller.BrokerHeartbeatManager  : [QuorumController id=0] The request from broker 0 to unfence has been granted because it has caught up with the offset of its register broker record 5.
+2025-03-31T22:09:17.092+08:00  INFO 24336 --- [0-event-handler] o.a.k.controller.ClusterControlManager   : [QuorumController id=0] Replayed BrokerRegistrationChangeRecord modifying the registration for broker 0: BrokerRegistrationChangeRecord(brokerId=0, brokerEpoch=5, fenced=-1, inControlledShutdown=0)
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [channel-manager] kafka.server.BrokerLifecycleManager      : [BrokerLifecycleManager id=0] The broker has been unfenced. Transitioning from RECOVERY to RUNNING.
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for the broker to be unfenced
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] o.a.k.s.network.EndpointReadyFutures     : authorizerStart completed for endpoint EXTERNAL. Endpoint is now READY.
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.network.SocketServer               : [SocketServer listenerType=BROKER, nodeId=0] Enabling request processing.
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for all of the authorizer futures to be completed
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for all of the authorizer futures to be completed
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Waiting for all of the SocketServer Acceptors to be started
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Finished waiting for all of the SocketServer Acceptors to be started
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [-kit-executor-3] kafka.server.BrokerServer                : [BrokerServer id=0] Transition from STARTING to STARTED
+2025-03-31T22:09:17.140+08:00  INFO 24336 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:62553]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-03-31T22:09:17.156+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.1
+2025-03-31T22:09:17.156+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e3c2b738d253ff5
+2025-03-31T22:09:17.156+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743430157156
+2025-03-31T22:09:17.167+08:00  INFO 24336 --- [| adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2025-03-31T22:09:17.167+08:00  INFO 24336 --- [| adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call. Call: fetchMetadata
+
+2025-03-31T22:09:17.171+08:00  INFO 24336 --- [| adminclient-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2025-03-31T22:09:17.173+08:00  INFO 24336 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-31T22:09:17.173+08:00  INFO 24336 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-31T22:09:17.173+08:00  INFO 24336 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-31T22:09:17.182+08:00  INFO 24336 --- [    Test worker] com.example.ks3.KafkaStreamTest          : Starting KafkaStreamTest using Java 17.0.12 with PID 24336 (started by tian1 in D:\code\spring\ks3)
+2025-03-31T22:09:17.184+08:00  INFO 24336 --- [    Test worker] com.example.ks3.KafkaStreamTest          : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-03-31T22:09:17.943+08:00  INFO 24336 --- [    Test worker] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = ks3-application
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:62553]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 1000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.springframework.kafka.support.serializer.JsonSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = C:\Users\tian1\AppData\Local\Temp\\kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2025-03-31T22:09:17.993+08:00  WARN 24336 --- [    Test worker] o.a.k.s.p.internals.StateDirectory       : Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [C:\Users\tian1\AppData\Local\Temp\\kafka-streams]
+2025-03-31T22:09:17.993+08:00 ERROR 24336 --- [    Test worker] o.a.k.s.p.internals.StateDirectory       : Failed to change permissions for the directory C:\Users\tian1\AppData\Local\Temp\kafka-streams
+2025-03-31T22:09:17.993+08:00 ERROR 24336 --- [    Test worker] o.a.k.s.p.internals.StateDirectory       : Failed to change permissions for the directory C:\Users\tian1\AppData\Local\Temp\kafka-streams\ks3-application
+2025-03-31T22:09:17.993+08:00  INFO 24336 --- [    Test worker] o.a.k.s.p.internals.StateDirectory       : Reading UUID from process file: a1fdfbef-fda0-4f8c-8140-12e0170499ec
+2025-03-31T22:09:18.005+08:00  INFO 24336 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:62553]
+	client.dns.lookup = use_all_dns_ips
+	client.id = ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-03-31T22:09:18.005+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.1
+2025-03-31T22:09:18.005+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e3c2b738d253ff5
+2025-03-31T22:09:18.005+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743430158005
+2025-03-31T22:09:18.005+08:00  INFO 24336 --- [    Test worker] org.apache.kafka.streams.KafkaStreams    : stream-client [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec] Kafka Streams version: 3.6.1
+2025-03-31T22:09:18.005+08:00  INFO 24336 --- [    Test worker] org.apache.kafka.streams.KafkaStreams    : stream-client [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec] Kafka Streams commit ID: 5e3c2b738d253ff5
+2025-03-31T22:09:18.032+08:00  INFO 24336 --- [    Test worker] o.a.k.s.p.internals.StreamThread         : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1] Creating restore consumer client
+2025-03-31T22:09:18.032+08:00  INFO 24336 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:62553]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2025-03-31T22:09:18.066+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.1
+2025-03-31T22:09:18.066+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e3c2b738d253ff5
+2025-03-31T22:09:18.066+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743430158066
+2025-03-31T22:09:18.080+08:00  INFO 24336 --- [    Test worker] o.a.k.s.p.internals.StreamThread         : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1] Creating thread producer client
+2025-03-31T22:09:18.083+08:00  INFO 24336 --- [    Test worker] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:62553]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2025-03-31T22:09:18.086+08:00  INFO 24336 --- [    Test worker] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-producer] Instantiated an idempotent producer.
+2025-03-31T22:09:18.094+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.1
+2025-03-31T22:09:18.094+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e3c2b738d253ff5
+2025-03-31T22:09:18.094+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743430158094
+2025-03-31T22:09:18.094+08:00  INFO 24336 --- [read-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-producer] Cluster ID: NlpReAFPTRS8tY5gdvctfA
+2025-03-31T22:09:18.110+08:00  INFO 24336 --- [    Test worker] o.a.k.s.p.internals.StreamThread         : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1] Creating consumer client
+2025-03-31T22:09:18.110+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ProducerIdControlManager         : [QuorumController id=0] Replaying ProducerIdsRecord ProducerIdsRecord(brokerId=0, brokerEpoch=5, nextProducerId=1000)
+2025-03-31T22:09:18.110+08:00  INFO 24336 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:62553]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ks3-application
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2025-03-31T22:09:18.110+08:00  INFO 24336 --- [    Test worker] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.1
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e3c2b738d253ff5
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743430158126
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [    Test worker] org.apache.kafka.streams.KafkaStreams    : stream-client [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec] State transition from CREATED to REBALANCING
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [    Test worker] org.apache.kafka.streams.KafkaStreams    : stream-client [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec] Started 1 stream threads
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1] Starting
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1] State transition from CREATED to STARTING
+2025-03-31T22:09:18.126+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Subscribed to topic(s): gold-smc-topic, ks3-application-KSTREAM-KEY-SELECT-0000000043-repartition, ks3-application-KSTREAM-MAP-0000000032-repartition, ks3-application-KSTREAM-MAP-0000000034-repartition, ks3-application-KSTREAM-TOTABLE-0000000011-repartition, ks3-application-KSTREAM-TOTABLE-0000000018-repartition, ks3-application-KSTREAM-TOTABLE-0000000026-repartition, position-instrument-topic
+2025-03-31T22:09:18.142+08:00  INFO 24336 --- [    Test worker] com.example.ks3.KafkaStreamTest          : Started KafkaStreamTest in 2.237 seconds (process running for 3.096)
+2025-03-31T22:09:18.142+08:00  WARN 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Error while fetching metadata with correlation id 2 : {ks3-application-KSTREAM-MAP-0000000034-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000026-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000011-repartition=UNKNOWN_TOPIC_OR_PARTITION, gold-smc-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000018-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-MAP-0000000032-repartition=UNKNOWN_TOPIC_OR_PARTITION, position-instrument-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-KEY-SELECT-0000000043-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-31T22:09:18.142+08:00  INFO 24336 --- [-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Cluster ID: NlpReAFPTRS8tY5gdvctfA
+2025-03-31T22:09:18.142+08:00  INFO 24336 --- [quest-handler-0] k.s.DefaultAutoTopicCreationManager      : Sent auto-creation request for Set(__consumer_offsets) to the active controller.
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] CreateTopics result(s): CreatableTopic(name='__consumer_offsets', numPartitions=50, replicationFactor=1, assignments=[], configs=[CreateableTopicConfig(name='compression.type', value='producer'), CreateableTopicConfig(name='cleanup.policy', value='compact'), CreateableTopicConfig(name='segment.bytes', value='104857600')]): SUCCESS
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed TopicRecord for topic __consumer_offsets with topic ID VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ConfigurationControlManager      : [QuorumController id=0] Replayed ConfigRecord for ConfigResource(type=TOPIC, name='__consumer_offsets') which set configuration compression.type to producer
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ConfigurationControlManager      : [QuorumController id=0] Replayed ConfigRecord for ConfigResource(type=TOPIC, name='__consumer_offsets') which set configuration cleanup.policy to compact
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ConfigurationControlManager      : [QuorumController id=0] Replayed ConfigRecord for ConfigResource(type=TOPIC, name='__consumer_offsets') which set configuration segment.bytes to 104857600
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-0 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-1 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-2 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-3 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-4 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-5 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-6 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-7 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-8 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-9 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-10 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-11 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-12 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-13 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-14 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-15 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-16 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-17 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-18 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-19 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-20 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-21 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-22 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-23 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-24 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-25 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-26 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-27 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-28 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-29 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-30 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-31 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-32 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-33 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-34 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-35 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-36 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-37 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-38 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-39 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-40 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-41 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-42 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-43 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-44 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-45 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-46 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-47 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-48 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.172+08:00  INFO 24336 --- [0-event-handler] o.a.k.c.ReplicationControlManager        : [QuorumController id=0] Replayed PartitionRecord for new partition __consumer_offsets-49 with topic ID VA_Xqa_ISWminDbseUcxdA and PartitionRegistration(replicas=[0], isr=[0], removingReplicas=[], addingReplicas=[], leader=0, leaderRecoveryState=RECOVERED, leaderEpoch=0, partitionEpoch=0).
+2025-03-31T22:09:18.219+08:00  INFO 24336 --- [read-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-producer] ProducerId set to 0 with epoch 0
+2025-03-31T22:09:18.219+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Transitioning 50 partition(s) to local leaders.
+2025-03-31T22:09:18.219+08:00  INFO 24336 --- [r-event-handler] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(__consumer_offsets-13, __consumer_offsets-46, __consumer_offsets-9, __consumer_offsets-42, __consumer_offsets-21, __consumer_offsets-17, __consumer_offsets-30, __consumer_offsets-26, __consumer_offsets-5, __consumer_offsets-38, __consumer_offsets-1, __consumer_offsets-34, __consumer_offsets-16, __consumer_offsets-45, __consumer_offsets-12, __consumer_offsets-41, __consumer_offsets-24, __consumer_offsets-20, __consumer_offsets-49, __consumer_offsets-0, __consumer_offsets-29, __consumer_offsets-25, __consumer_offsets-8, __consumer_offsets-37, __consumer_offsets-4, __consumer_offsets-33, __consumer_offsets-15, __consumer_offsets-48, __consumer_offsets-11, __consumer_offsets-44, __consumer_offsets-23, __consumer_offsets-19, __consumer_offsets-32, __consumer_offsets-28, __consumer_offsets-7, __consumer_offsets-40, __consumer_offsets-3, __consumer_offsets-36, __consumer_offsets-47, __consumer_offsets-14, __consumer_offsets-43, __consumer_offsets-10, __consumer_offsets-22, __consumer_offsets-18, __consumer_offsets-31, __consumer_offsets-27, __consumer_offsets-39, __consumer_offsets-6, __consumer_offsets-35, __consumer_offsets-2)
+2025-03-31T22:09:18.219+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-13 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.235+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-13, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-13 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-13 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-13 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-13
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-13 broker=0] Log loaded for partition __consumer_offsets-13 with initial high watermark 0
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-13 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.237+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] (Re-)joining group
+2025-03-31T22:09:18.247+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-46 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.252+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-46, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.252+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-46 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-46 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.252+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-46 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-46
+2025-03-31T22:09:18.252+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-46 broker=0] Log loaded for partition __consumer_offsets-46 with initial high watermark 0
+2025-03-31T22:09:18.253+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-46 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.254+08:00  WARN 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Error while fetching metadata with correlation id 7 : {ks3-application-KSTREAM-MAP-0000000034-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000026-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000011-repartition=UNKNOWN_TOPIC_OR_PARTITION, gold-smc-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000018-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-MAP-0000000032-repartition=UNKNOWN_TOPIC_OR_PARTITION, position-instrument-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-KEY-SELECT-0000000043-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: error response NOT_COORDINATOR. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] JoinGroup failed: This is not the correct coordinator. Marking coordinator unknown. Sent generation was Generation{generationId=-1, memberId='', protocol='null'}
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Client requested disconnect from node 2147483647
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-9 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.254+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.266+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-9, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.267+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-9 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-9 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.267+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-9 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-9
+2025-03-31T22:09:18.267+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-9 broker=0] Log loaded for partition __consumer_offsets-9 with initial high watermark 0
+2025-03-31T22:09:18.267+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-9 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.274+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-42 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.278+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-42, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.278+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-42 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-42 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.279+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-42 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-42
+2025-03-31T22:09:18.279+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-42 broker=0] Log loaded for partition __consumer_offsets-42 with initial high watermark 0
+2025-03-31T22:09:18.279+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-42 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.287+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-21 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.291+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-21, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.292+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-21 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-21 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.292+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-21 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-21
+2025-03-31T22:09:18.292+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-21 broker=0] Log loaded for partition __consumer_offsets-21 with initial high watermark 0
+2025-03-31T22:09:18.292+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-21 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.300+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-17 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.304+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-17, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.304+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-17 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-17 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.304+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-17 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-17
+2025-03-31T22:09:18.304+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-17 broker=0] Log loaded for partition __consumer_offsets-17 with initial high watermark 0
+2025-03-31T22:09:18.304+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-17 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.313+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-30 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.317+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-30, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.317+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-30 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-30 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.317+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-30 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-30
+2025-03-31T22:09:18.317+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-30 broker=0] Log loaded for partition __consumer_offsets-30 with initial high watermark 0
+2025-03-31T22:09:18.317+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-30 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.325+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-26 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.329+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-26, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.329+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-26 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-26 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.329+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-26 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-26
+2025-03-31T22:09:18.329+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-26 broker=0] Log loaded for partition __consumer_offsets-26 with initial high watermark 0
+2025-03-31T22:09:18.329+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-26 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.337+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-5 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.341+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-5, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.341+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-5 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-5 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.341+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-5 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-5
+2025-03-31T22:09:18.341+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-5 broker=0] Log loaded for partition __consumer_offsets-5 with initial high watermark 0
+2025-03-31T22:09:18.341+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-5 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Request joining group due to: rebalance failed due to 'This is not the correct coordinator.' (NotCoordinatorException)
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] (Re-)joining group
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-38 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: error response NOT_COORDINATOR. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] JoinGroup failed: This is not the correct coordinator. Marking coordinator unknown. Sent generation was Generation{generationId=-1, memberId='', protocol='null'}
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Client requested disconnect from node 2147483647
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-38, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-38 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-38 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-38 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-38
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-38 broker=0] Log loaded for partition __consumer_offsets-38 with initial high watermark 0
+2025-03-31T22:09:18.347+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-38 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.362+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-1 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.362+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-1, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.362+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-1 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-1 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.362+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-1
+2025-03-31T22:09:18.362+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] Log loaded for partition __consumer_offsets-1 with initial high watermark 0
+2025-03-31T22:09:18.362+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-1 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.375+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-34 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.379+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-34, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.379+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-34 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-34 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.379+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-34 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-34
+2025-03-31T22:09:18.379+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-34 broker=0] Log loaded for partition __consumer_offsets-34 with initial high watermark 0
+2025-03-31T22:09:18.379+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-34 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.392+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-16 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-16, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-16 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-16 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-16 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-16
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-16 broker=0] Log loaded for partition __consumer_offsets-16 with initial high watermark 0
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-16 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-45 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-45, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-45 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-45 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-45 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-45
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-45 broker=0] Log loaded for partition __consumer_offsets-45 with initial high watermark 0
+2025-03-31T22:09:18.394+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-45 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.410+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-12 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.410+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-12, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.410+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-12 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-12 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.410+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-12 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-12
+2025-03-31T22:09:18.410+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-12 broker=0] Log loaded for partition __consumer_offsets-12 with initial high watermark 0
+2025-03-31T22:09:18.410+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-12 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.425+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-41 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.428+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-41, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.428+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-41 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-41 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.428+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-41 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-41
+2025-03-31T22:09:18.428+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-41 broker=0] Log loaded for partition __consumer_offsets-41 with initial high watermark 0
+2025-03-31T22:09:18.428+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-41 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.428+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-24 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-24, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-24 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-24 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-24 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-24
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-24 broker=0] Log loaded for partition __consumer_offsets-24 with initial high watermark 0
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-24 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-20 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-20, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-20 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-20 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-20 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-20
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-20 broker=0] Log loaded for partition __consumer_offsets-20 with initial high watermark 0
+2025-03-31T22:09:18.441+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-20 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.457+08:00  WARN 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Error while fetching metadata with correlation id 13 : {ks3-application-KSTREAM-MAP-0000000034-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000026-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000011-repartition=UNKNOWN_TOPIC_OR_PARTITION, gold-smc-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000018-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-MAP-0000000032-repartition=UNKNOWN_TOPIC_OR_PARTITION, position-instrument-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-KEY-SELECT-0000000043-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Request joining group due to: rebalance failed due to 'This is not the correct coordinator.' (NotCoordinatorException)
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] (Re-)joining group
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: error response NOT_COORDINATOR. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] JoinGroup failed: This is not the correct coordinator. Marking coordinator unknown. Sent generation was Generation{generationId=-1, memberId='', protocol='null'}
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Client requested disconnect from node 2147483647
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-49 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-49, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-49 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-49 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-49 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-49
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-49 broker=0] Log loaded for partition __consumer_offsets-49 with initial high watermark 0
+2025-03-31T22:09:18.457+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-49 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.475+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-0 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.475+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-0, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.475+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-0 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-0 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.475+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-0
+2025-03-31T22:09:18.475+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] Log loaded for partition __consumer_offsets-0 with initial high watermark 0
+2025-03-31T22:09:18.475+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-0 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.489+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-29 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.489+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-29, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.489+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-29 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-29 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.489+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-29 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-29
+2025-03-31T22:09:18.489+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-29 broker=0] Log loaded for partition __consumer_offsets-29 with initial high watermark 0
+2025-03-31T22:09:18.489+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-29 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.500+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-25 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.500+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-25, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.505+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-25 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-25 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.505+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-25 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-25
+2025-03-31T22:09:18.505+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-25 broker=0] Log loaded for partition __consumer_offsets-25 with initial high watermark 0
+2025-03-31T22:09:18.505+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-25 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.512+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-8 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.515+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-8, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.515+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-8 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-8 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.515+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-8 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-8
+2025-03-31T22:09:18.515+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-8 broker=0] Log loaded for partition __consumer_offsets-8 with initial high watermark 0
+2025-03-31T22:09:18.515+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-8 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.520+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-37 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.520+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-37, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.520+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-37 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-37 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.520+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-37 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-37
+2025-03-31T22:09:18.520+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-37 broker=0] Log loaded for partition __consumer_offsets-37 with initial high watermark 0
+2025-03-31T22:09:18.520+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-37 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.541+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-4 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.541+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-4, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.541+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-4 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-4 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.541+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-4
+2025-03-31T22:09:18.541+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] Log loaded for partition __consumer_offsets-4 with initial high watermark 0
+2025-03-31T22:09:18.541+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-4 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-33 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-33, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-33 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-33 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-33 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-33
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-33 broker=0] Log loaded for partition __consumer_offsets-33 with initial high watermark 0
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-33 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.553+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-15 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.567+08:00  WARN 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Error while fetching metadata with correlation id 18 : {ks3-application-KSTREAM-MAP-0000000034-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000026-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000011-repartition=UNKNOWN_TOPIC_OR_PARTITION, gold-smc-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000018-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-MAP-0000000032-repartition=UNKNOWN_TOPIC_OR_PARTITION, position-instrument-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-KEY-SELECT-0000000043-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-15, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-15 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-15 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-15 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-15
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-15 broker=0] Log loaded for partition __consumer_offsets-15 with initial high watermark 0
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-15 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Request joining group due to: rebalance failed due to 'This is not the correct coordinator.' (NotCoordinatorException)
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] (Re-)joining group
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: error response NOT_COORDINATOR. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] JoinGroup failed: This is not the correct coordinator. Marking coordinator unknown. Sent generation was Generation{generationId=-1, memberId='', protocol='null'}
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Client requested disconnect from node 2147483647
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-48 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-48, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-48 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-48 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-48 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-48
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-48 broker=0] Log loaded for partition __consumer_offsets-48 with initial high watermark 0
+2025-03-31T22:09:18.567+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-48 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.583+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-11 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.583+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-11, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.583+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-11 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-11 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.583+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-11 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-11
+2025-03-31T22:09:18.583+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-11 broker=0] Log loaded for partition __consumer_offsets-11 with initial high watermark 0
+2025-03-31T22:09:18.583+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-11 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-44 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-44, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-44 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-44 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-44 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-44
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-44 broker=0] Log loaded for partition __consumer_offsets-44 with initial high watermark 0
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-44 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.598+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-23 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-23, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-23 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-23 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-23 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-23
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-23 broker=0] Log loaded for partition __consumer_offsets-23 with initial high watermark 0
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-23 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-19 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-19, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-19 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-19 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-19 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-19
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-19 broker=0] Log loaded for partition __consumer_offsets-19 with initial high watermark 0
+2025-03-31T22:09:18.614+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-19 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.630+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-32 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.630+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-32, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.630+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-32 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-32 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.630+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-32 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-32
+2025-03-31T22:09:18.630+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-32 broker=0] Log loaded for partition __consumer_offsets-32 with initial high watermark 0
+2025-03-31T22:09:18.630+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-32 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.646+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-28 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.646+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-28, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.646+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-28 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-28 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.646+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-28 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-28
+2025-03-31T22:09:18.646+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-28 broker=0] Log loaded for partition __consumer_offsets-28 with initial high watermark 0
+2025-03-31T22:09:18.646+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-28 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.658+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-7 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.662+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-7, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.662+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-7 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-7 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.662+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-7 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-7
+2025-03-31T22:09:18.662+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-7 broker=0] Log loaded for partition __consumer_offsets-7 with initial high watermark 0
+2025-03-31T22:09:18.662+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-7 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.669+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-40 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.671+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-40, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.671+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-40 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-40 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.671+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-40 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-40
+2025-03-31T22:09:18.671+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-40 broker=0] Log loaded for partition __consumer_offsets-40 with initial high watermark 0
+2025-03-31T22:09:18.671+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-40 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.677+08:00  WARN 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Error while fetching metadata with correlation id 23 : {ks3-application-KSTREAM-MAP-0000000034-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000026-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000011-repartition=UNKNOWN_TOPIC_OR_PARTITION, gold-smc-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-TOTABLE-0000000018-repartition=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-MAP-0000000032-repartition=UNKNOWN_TOPIC_OR_PARTITION, position-instrument-topic=UNKNOWN_TOPIC_OR_PARTITION, ks3-application-KSTREAM-KEY-SELECT-0000000043-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Request joining group due to: rebalance failed due to 'This is not the correct coordinator.' (NotCoordinatorException)
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] (Re-)joining group
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: error response NOT_COORDINATOR. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] JoinGroup failed: This is not the correct coordinator. Marking coordinator unknown. Sent generation was Generation{generationId=-1, memberId='', protocol='null'}
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Client requested disconnect from node 2147483647
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-3 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Discovered group coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Group coordinator localhost:62553 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=ks3-application-a1fdfbef-fda0-4f8c-8140-12e0170499ec-StreamThread-1-consumer, groupId=ks3-application] Requesting disconnect from last known coordinator localhost:62553 (id: 2147483647 rack: null)
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-3, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-3 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-3 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-3
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] Log loaded for partition __consumer_offsets-3 with initial high watermark 0
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-3 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.677+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-36 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.693+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-36, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.693+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-36 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-36 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.693+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-36 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-36
+2025-03-31T22:09:18.693+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-36 broker=0] Log loaded for partition __consumer_offsets-36 with initial high watermark 0
+2025-03-31T22:09:18.693+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-36 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.693+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-47 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.709+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-47, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.709+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-47 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-47 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.709+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-47 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-47
+2025-03-31T22:09:18.709+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-47 broker=0] Log loaded for partition __consumer_offsets-47 with initial high watermark 0
+2025-03-31T22:09:18.709+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-47 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.721+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-14 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.725+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-14, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.725+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-14 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-14 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.725+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-14 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-14
+2025-03-31T22:09:18.725+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-14 broker=0] Log loaded for partition __consumer_offsets-14 with initial high watermark 0
+2025-03-31T22:09:18.725+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-14 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+2025-03-31T22:09:18.731+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Creating new partition __consumer_offsets-43 with topic id VA_Xqa_ISWminDbseUcxdA.
+2025-03-31T22:09:18.735+08:00  INFO 24336 --- [r-event-handler] kafka.log.UnifiedLog$                    : [LogLoader partition=__consumer_offsets-43, dir=C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0] Loading producer state till offset 0 with message format version 2
+2025-03-31T22:09:18.735+08:00  INFO 24336 --- [r-event-handler] kafka.log.LogManager                     : Created log for partition __consumer_offsets-43 in C:\Users\tian1\AppData\Local\Temp\kafka-11086634106411395635\broker_0_data0\__consumer_offsets-43 with properties {cleanup.policy=compact, compression.type=&quot;producer&quot;, segment.bytes=104857600}
+2025-03-31T22:09:18.735+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-43 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-43
+2025-03-31T22:09:18.735+08:00  INFO 24336 --- [r-event-handler] kafka.cluster.Partition                  : [Partition __consumer_offsets-43 broker=0] Log loaded for partition __consumer_offsets-43 with initial high watermark 0
+2025-03-31T22:09:18.735+08:00  INFO 24336 --- [r-event-handler] state.change.logger                      : [Broker id=0] Leader __consumer_offsets-43 with topic id Some(VA_Xqa_ISWminDbseUcxdA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [0], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10</a> at 2025年3月31日 下午10:09:20</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "key": "GOLD",
+    "value": {
+      "id": "GOLD",
+      "type": "product",
+      "name": "Gold",
+      "securityType": "OPTION",
+      "exchangeId": "CMX",
+      "exchangeClearingId": "GC"
+    }
+  },
+  {
+    "key": "FUT001",
+    "value": {
+      "id": "FUT001",
+      "type": "contract",
+      "name": "Gold Futures",
+      "contractType": "fut",
+      "securityType": "FUTURE",
+      "exchangeId": "CMX",
+      "exchangeClearingId": "GC",
+      "contractSize": 100,
+      "lastTradeDate": "2024-12-31"
+    }
+  },
+  {
+    "key": "OPT001",
+    "value": {
+      "id": "OPT001",
+      "type": "contract",
+      "name": "Gold Options",
+      "contractType": "opt",
+      "securityType": "OPTION",
+      "exchangeId": "CMX",
+      "exchangeClearingId": "GC",
+      "contractSize": 100,
+      "lastTradeDate": "2024-12-31",
+      "productId": "GOLD"
+    }
+  }
+] 

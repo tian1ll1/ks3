@@ -1,0 +1,39 @@
+[
+  {
+    "key": "FUT001",
+    "value": {
+      "id": "FUT001",
+      "symbol": "GC",
+      "type": "FUTURE",
+      "exchange": "COMEX",
+      "currency": "USD",
+      "contractType": "fut",
+      "securityType": "FUTURE",
+      "exchangeId": "CMX",
+      "exchangeClearingId": "GC",
+      "contractSize": 100,
+      "lastTradeDate": "2024-12-31",
+      "maturityDate": "2024-12-31",
+      "name": "Gold Futures"
+    }
+  },
+  {
+    "key": "OPT001",
+    "value": {
+      "id": "OPT001",
+      "symbol": "GC",
+      "type": "OPTION",
+      "exchange": "COMEX",
+      "currency": "USD",
+      "contractType": "opt",
+      "securityType": "OPTION",
+      "exchangeId": "CMX",
+      "exchangeClearingId": "GC",
+      "contractSize": 100,
+      "lastTradeDate": "2024-12-31",
+      "maturityDate": "2024-12-31",
+      "name": "Gold Options",
+      "productId": "GOLD"
+    }
+  }
+] 
